@@ -33,12 +33,14 @@ def transform(soup): # extracts job data and creates a dictionary for each job, 
         try:
             companyLink = "https://www.indeed.com" + div.a['href']   
         except:
-            companyLink = "No Link Found"     
+            companyLink = "No Link Found"  
+        jobLocation = div.find("div", class_="companyLocation").text   
         
        
         job = {
             'Title' : jobTitle, 
             'Company' : company,  
+            'Location' : jobLocation,
             'Salary' : salary, 
             'Summary' : summary,
             'Company Link' : companyLink,
@@ -63,10 +65,10 @@ def exportToExcel():
     formatHeaderRow = workbook.add_format({'text_wrap': 'True', 'font_size' : 20, 'bold': 'True'}) 
 
     # sets column formatting 
-    worksheet.set_column('A:C', 20, format) 
+    worksheet.set_column('A:D', 20, format) 
 
-    worksheet.set_column('D:E', 40, format)
-    worksheet.set_column('E:E', 50, format)
+    worksheet.set_column('E:F', 40, format)
+    worksheet.set_column('F:F', 50, format)
 
 
     # sets header row formatting 
