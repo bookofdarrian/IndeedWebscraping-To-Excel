@@ -1,7 +1,7 @@
 # IndeedWebscraping-To-Excel
 
 ## Description
-Web scraping Python project that extracts four pages of job data from a specified Indeed link and exports it to an excel file titled "internships.xlsx". The job data includes job title, company name, salary, job summary, and the company's Indeed profile link. 
+Web scraping Python project that extracts four pages of job data from a specified Indeed link and exports it to an excel file titled "internships.xlsx". The job data includes job title, company name, job location, salary, job summary, and the company's Indeed profile link. 
 
 The website link: 
 <br>
