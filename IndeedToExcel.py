@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 # 10/22/21
 # Indeed Web Scraping Program that extracts four pages of job data and writes it to a formated excel file 
 
